@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0px 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+/* ---------------main------------------- */
+main {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.main-left h4 {
+    font-size: 20px;
+    color: rgb(117, 109, 109);
+}
+
+.main-left h1 {
+    font-size: 70px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+.main-left p {
+    margin-bottom: 10px;
+    color: rgb(117, 109, 109);
+    line-height: 25px;
+}
+
+.main-left button {
+    width: 170px;
+    padding: 20px;
+    border: none;
+    color: white;
+    background: #000;
+    margin-top: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.main-right img {
+    width: 350px;
+}
+
+@media screen and (max-width:600px){
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+}
+
+.compny-logo {
+    width: 100%;
+    padding: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+@media screen and (max-width:600px){
+    .compny-logo img{
+        width: 40px;
+    }
+}
+
+/* -------------skills-------- */
+.skils {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+@media screen and (max-width:600px) {
+    .skils{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+
+.skil {
+    width: 300px;
+    text-align: center;
+}
+
+.skil img {
+    margin-bottom: 20px;
+}
+
+.skil h2,
+p {
+    color: #2c2929;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+
+/* ----------letest-work-------------- */
+#letest-work h3 {
+    text-align: center;
+    padding: 20px;
+}
+
+.lwork {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: capitalize;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.work {
+    width: 400px;
+    transition: 0.8s all ease;
+    cursor: pointer;
+}
+.work:hover{
+    box-shadow: 1px 1px 10px 1px;
+}
+
+.work img {
+    width: 100%;
+}
+
+.work h6 {
+    font-size: 20px;
+    padding: 0px 8px ;
+}
+.work p{
+    padding: 0px 8px;
+}
+
+
+
+
+
+
+
+
+
+
+.title {
+    text-align: center;
+    padding: 20px;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+
+}
+
+.testimonial {
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    text-align: center;
+    background: hsla(0, 16%, 89%, 0.493);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+}
+
+.testimonial p {
+    font-size: 23px;
+}
+
+.imges {
+    display: flex;
+
+}
+
+.imges img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.rating {
+    text-align: left;
+}
+
+.rating h6 {
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.rating p {
+    font-size: 14px;
+}
+
+
+/* ----------footer----------- */
+footer {
+    padding: 20px;
+}
+
+.footer {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+
+}
+
+.footer-left {
+    width: 460px;
+}
+
+.ftitle {
+    padding: 5px 20px;
+    font-size: 40px;
+}
+
+.footer-right {
+    width: 350px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #e9dfdf;
+    border: none;
+    outline: none;
+}
+
+form button {
+    width: 40%;
+    padding: 14px;
+    border: none;
+    outline: none;
+    color: white;
+    background: #000;
+    cursor: pointer;
+}
+
+@media screen and (max-width:600px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-right{
+        width: 100%;
+    }
+    .footer-left{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
